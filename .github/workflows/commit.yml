@@ -7,6 +7,6 @@ jobs:
       - uses: actions/checkout@v3
         with:
           repository: sumit1git/AutoCoder
-          ref: eff8fb4
+          ref: 118affb6297b8d01413d7305efd18a30e918936f
       - name: Greetings
         run: echo "$(<greeting.txt)"
