@@ -1,0 +1,12 @@
+name: greetings
+on: [push]
+jobs:
+  external-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: sumit1git/AutoCoder
+          ref: main
+      - name: Greetings
+        run: echo "$(<greeting.txt)"
